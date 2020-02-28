@@ -1,0 +1,152 @@
+
+body {
+    box-sizing: border-box;
+}
+
+.gradiant-background {
+    background: -webkit-gradient(linear, left bottom, left top, from(#fbc2eb), to(#a18cd1));
+    background: -webkit-linear-gradient(bottom, #fbc2eb 0%, #a18cd1 100%);
+    background: -moz-linear-gradient(bottom, #fbc2eb 0%, #a18cd1 100%);
+    background: -o-linear-gradient(bottom, #fbc2eb 0%, #a18cd1 100%);
+    background: line
+}
+main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.card {
+  background-color: black;
+  color: #fff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.card-header {
+  height: 18rem;
+}
+
+.card-header img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-body {
+  padding:  2rem 1.2rem;
+}
+
+.card-title {
+  font-size: 1.2rem;
+}
+
+
+.form-field input, .form-field select {
+  width: 100%;
+  height: 2.2rem;
+  background-color: black;
+  color: white;
+}
+
+.form-field input::placeholder, .form-field select::placeholder .form-field select:invalid  {
+  color: #ccc;
+
+}
+
+.form-field {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgb(167, 161, 161);
+}
+
+.select-field {
+  position: relative;
+}
+
+.select-field::after {
+    content: '>';
+    font: 17px "Consolas", monospace;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    position: absolute;
+    pointer-events: none;
+    right: 0.5rem;
+}
+
+.submit-btn {
+  width: 6rem;
+  height: 2rem;
+  background-color: rgb(36, 192, 36);
+  color: white;
+  border-radius: 1rem;
+  font-family: "Poppins";
+  font-size: 0.8rem;
+}
+
+@media only screen and (min-width: 787px) {
+  .card {
+    display: flex;
+    max-width: 760px;
+  }
+  .card-header, .card-body {
+    width: 50%;
+  }
+  .card-header{
+    min-height: 35rem;
+  }
+  .form-field input, .form-field select {
+    font-size: 1rem;
+  }
+  .card-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+ input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    
+    border: none;
+    border-bottom: 1px solid white;
+    
+  } 
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .select-field {
+      width: 100%;
+      padding: 1rem;
+      margin-bottom: 1rem;
+  }
+  ::placeholder {
+      color: white;
+  }
+  input::placeholder {
+    color: #ccc;
+    opacity: 1; 
+  }
+
+
+.submit-btn {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 25%;
+}
